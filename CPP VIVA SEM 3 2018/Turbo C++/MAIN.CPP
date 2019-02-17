@@ -700,7 +700,7 @@ void showForm()
 		form.putData(i);
 		printf("%.3d     ",form.id);
 		if(i == step || sel < 10)
-		    animatedWord(x+8,y,form.name);
+		    animatedWord(x+8,y,strcat(form.name,"                  "));
 		else
 		    cout << form.name;
 		y+=2;
