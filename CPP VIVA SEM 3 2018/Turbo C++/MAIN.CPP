@@ -91,6 +91,9 @@ void animatedWord(int x,int y,char  tmp[],int F,int speed)
 }
 void welcomeGame()
 {
+	score=0;
+	life=3;
+	l=4;
 	closeFlag=1;
 	char arr[20];
 	for(i=0;i<=23;i++)
@@ -702,7 +705,7 @@ void showForm()
 		if(i == step || sel < 10)
 		    animatedWord(x+8,y,strcat(form.name,"                  "));
 		else
-		    cout << form.name;
+		    cout << strcat(form.name,"                  ");
 		y+=2;
 	    }
 	}
